@@ -1,0 +1,6 @@
+quantika14.com filtros/quantika14.com.txt
+duckduckgo.com filtros/duckduckgo.com.txt
+duck.co filtros/duck.co.txt
+duck.co filtros/duck.co.txt
+duck.co filtros/duck.co.txt
+duckduckgo.com filtros/duckduckgo.com.txt
