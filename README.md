@@ -1,17 +1,20 @@
 # Triana Browser
-Mas info en trianabrowser.quantika14.com
+Mas info en http://trianabrowser.quantika14.com
 
 ## Instalacion de las dependencias
 
+``` sh
 $ cd trianabrowser/
 $ sudo pip install -r requeriments.txt
+```
 
-Descargar e install pygtkcodebuffer desde https://code.google.com/p/pygtkcodebuffer/
+Descargar e install pygtkcodebuffer desde https://code.google.com/p/pygtkcodebuffer/.
 Un vez descomprimido:
 
+``` sh
 $ cd pygtkcodebuffer
 $ sudo python setup.py install
-
+```
 
 # Licencia
 
