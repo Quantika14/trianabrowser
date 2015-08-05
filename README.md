@@ -16,7 +16,7 @@ $ cd pygtkcodebuffer
 $ sudo python setup.py install
 ```
 
-# Licencia
+##  Licencia
 
     Copyright (C) 2015  QuantiKa14 S.C
 
