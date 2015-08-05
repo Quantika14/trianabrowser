@@ -127,7 +127,7 @@ class Tab(gtk.VBox):
         self.answerwin.set_position(gtk.WIN_POS_CENTER)
         self.answerwin.set_size_request(600, 200)
         self.answerwin.set_keep_above(True)
-        self.answerwin.set_title("Yeah Niggaaaaaaaaaa!")
+        self.answerwin.set_title("Creacion de filtros")
         self.answerwin.show()
 
         vbox = gtk.VBox(False, 0)
