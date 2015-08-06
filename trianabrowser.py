@@ -1,23 +1,20 @@
-''' Copyright (C) 2015  QuantiKa14 S.C
-
-    This program is free software: you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation, either version 3 of the License, or
-    (at your option) any later version.
-
-    This program is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
-
-    You should have received a copy of the GNU General Public License
-    along with this program.  If not, see <http://www.gnu.org/licenses/>.
-'''
-
-
-
-
 #!/usr/bin/python
+''' 
+Copyright (C) 2015  QuantiKa14 S.C
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+'''
 
 import pygtk
 pygtk.require('2.0')
@@ -128,8 +125,8 @@ class Tab(gtk.VBox):
                 url = "http://" + url
                 self.open_page(url)
 
-        '''FIX ME!!!!!!!!!!. Actualmente no funciona''' 
         except HTTPConnectivityException():
+            ''' FIX ME. Actualmentente no funciona ''' 
             url = "https://www.google.es/#q=" + url
             
         self.open_page(url)
@@ -465,13 +462,13 @@ class Browser(gtk.Window):
     
     def _populate_page_popup(self, view, menu):
         ''' Anadimos los campos al menu del boton derecho con sus correspondientes callbacks ''' 
-         source = gtk.MenuItem("Ver codigo fuente")
-         source.connect("activate", self._open_source_tab, view)
-         new_tab = gtk.MenuItem("Nuevo Tab")
-         new_tab.connect("activate", self._open_new_tab, view)
-         menu.insert(source, -1)
-         menu.insert(new_tab, -1)
-         menu.show_all()
+        source = gtk.MenuItem("Ver codigo fuente")
+        source.connect("activate", self._open_source_tab, view)
+        new_tab = gtk.MenuItem("Nuevo Tab")
+        new_tab.connect("activate", self._open_new_tab, view)
+        menu.insert(source, -1)
+        menu.insert(new_tab, -1)
+        menu.show_all()
 
     def _open_source_tab(self, menuitem, view):
         ''' Creacion del tab que contendra el codigo fuente. Es practicamente igual que la del tab 
